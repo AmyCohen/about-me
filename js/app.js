@@ -23,9 +23,22 @@ if (collegeDegree.toLowerCase() === 'yes') {
 } else {
   alert('You have entered an invalid answer. Please limit your responses to "yes" or "no".');
 }
+
 console.log('QUESTION: Do you think I have a college degree?  YOUR ANSWER: ' + collegeDegree.toLowerCase());
 
 
-// var comuteToClass = prompt('Do you think I drive to class?');
+var commuteToClass = prompt('Do you think I drive to class?');
+
+if (commuteToClass.toLowerCase() === 'yes') {
+  alert('Thankfully not. Driving and parking in the city is so expensive! I take the bus.');
+} else if (commuteToClass.toLowerCase() === 'no') {
+  alert('You are correct. I take 3 different buses to get to class.');
+} else {
+  alert('You have entered an invalid answer. Please limit your responses to "yes" or "no".');
+}
+
+console.log('QUESTION: Do you think I drive to class?  YOUR ANSWER: ' + commuteToClass.toLowerCase());
+
+
 // var likeSewing = prompt('Do you think I like to sew?');
 // var likeCamping = prompt('Do you think I like camping?');
