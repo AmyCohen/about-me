@@ -1,7 +1,9 @@
 'use strict';
 alert('Please answer all questions with a "yes" or "no". Thank you.');
 
-var dogOwnership = prompt('Do you think I have any dogs?');
+var userName = prompt('Thank you for visiting. What name would you like to be known by?');
+
+var dogOwnership = prompt(userName + ', do you think I have any dogs?');
 
 if (dogOwnership.toLowerCase() === 'yes') {
   alert('Sadly, I do not have any dogs.');
@@ -11,10 +13,10 @@ if (dogOwnership.toLowerCase() === 'yes') {
   alert('You have entered an invalid answer. Please limit your responses to "yes" or "no".');
 }
 
-console.log('QUESTION: Do you think I have any dogs?  YOUR ANSWER: ' + dogOwnership.toLowerCase());
+console.log('QUESTION: Do you think I have any dogs?   ' + userName + '\'s Answer: ' + dogOwnership.toLowerCase());
 
 
-var collegeDegree = prompt('Do you think I have a college degree?');
+var collegeDegree = prompt(userName + ', do you think I have a college degree?');
 
 if (collegeDegree.toLowerCase() === 'yes') {
   alert('Yes! You are correct. I have a bachelor\'s in Legal Office Administration.');
@@ -24,10 +26,10 @@ if (collegeDegree.toLowerCase() === 'yes') {
   alert('You have entered an invalid answer. Please limit your responses to "yes" or "no".');
 }
 
-console.log('QUESTION: Do you think I have a college degree?  YOUR ANSWER: ' + collegeDegree.toLowerCase());
+console.log('QUESTION: Do you think I have a college degree?   ' + userName + '\'s Answer: ' + collegeDegree.toLowerCase());
 
 
-var commuteToClass = prompt('Do you think I drive to class?');
+var commuteToClass = prompt(userName + ', do you think I drive to class?');
 
 if (commuteToClass.toLowerCase() === 'yes') {
   alert('Thankfully not. Driving and parking in the city is so expensive! I take the bus.');
@@ -37,10 +39,10 @@ if (commuteToClass.toLowerCase() === 'yes') {
   alert('You have entered an invalid answer. Please limit your responses to "yes" or "no".');
 }
 
-console.log('QUESTION: Do you think I drive to class?  YOUR ANSWER: ' + commuteToClass.toLowerCase());
+console.log('QUESTION: Do you think I drive to class?   ' + userName + '\'s Answer: ' + commuteToClass.toLowerCase());
 
 
-var likeSewing = prompt('Do you think I like to sew?');
+var likeSewing = prompt(userName + ', do you think I like to sew?');
 
 if (likeSewing.toLowerCase() === 'yes') {
   alert('ABSOLUTELY!!!');
@@ -50,10 +52,10 @@ if (likeSewing.toLowerCase() === 'yes') {
   alert('You have entered an invalid answer. Please limit your responses to "yes" or "no".');
 }
 
-console.log('QUESTION: Do you think I like to sew?  YOUR ANSWER: ' + likeSewing.toLowerCase());
+console.log('QUESTION: Do you think I like to sew?   ' + userName + '\'s Answer: ' + likeSewing.toLowerCase());
 
 
-var likeCamping = prompt('Do you think I like camping?');
+var likeCamping = prompt(userName + ', do you think I like camping?');
 
 if (likeCamping.toLowerCase() === 'yes') {
   alert('The short answer is "yes". The longer answer is I would prefer to go "glamping" or go with just my family, but we usually have a large group.');
@@ -63,4 +65,4 @@ if (likeCamping.toLowerCase() === 'yes') {
   alert('You have entered an invalid answer. Please limit your responses to "yes" or "no".');
 }
 
-console.log('QUESTION: Do you think I like camping?  YOUR ANSWER: ' + likeCamping.toLowerCase());
+console.log('QUESTION: Do you think I like camping?   ' + userName + '\'s Answer: ' + likeCamping.toLowerCase());
