@@ -40,5 +40,17 @@ if (commuteToClass.toLowerCase() === 'yes') {
 console.log('QUESTION: Do you think I drive to class?  YOUR ANSWER: ' + commuteToClass.toLowerCase());
 
 
-// var likeSewing = prompt('Do you think I like to sew?');
+var likeSewing = prompt('Do you think I like to sew?');
+
+if (likeSewing.toLowerCase() === 'yes') {
+  alert('ABSOLUTELY!!!');
+} else if (likeSewing.toLowerCase() === 'no') {
+  alert('That is so sad. I absolutely LOVE to sew!');
+} else {
+  alert('You have entered an invalid answer. Please limit your responses to "yes" or "no".');
+}
+
+console.log('QUESTION: Do you think I like to sew?  YOUR ANSWER: ' + likeSewing.toLowerCase());
+
+
 // var likeCamping = prompt('Do you think I like camping?');
