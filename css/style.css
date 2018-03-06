@@ -1,0 +1,26 @@
+body {
+  background-color: rgb(93, 89, 119);
+  margin: 25px;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: bold;
+  font-family: fantasy;
+  color: rgb(163, 208, 253);
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.75em;
+}
