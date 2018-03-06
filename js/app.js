@@ -53,4 +53,14 @@ if (likeSewing.toLowerCase() === 'yes') {
 console.log('QUESTION: Do you think I like to sew?  YOUR ANSWER: ' + likeSewing.toLowerCase());
 
 
-// var likeCamping = prompt('Do you think I like camping?');
+var likeCamping = prompt('Do you think I like camping?');
+
+if (likeCamping.toLowerCase() === 'yes') {
+  alert('The short answer is "yes". The longer answer is I would prefer to go "glamping" or go with just my family, but we usually have a large group.');
+} else if (likeCamping.toLowerCase() === 'no') {
+  alert('You are incorrect. I do enjoy going camping.');
+} else {
+  alert('You have entered an invalid answer. Please limit your responses to "yes" or "no".');
+}
+
+console.log('QUESTION: Do you think I like camping?  YOUR ANSWER: ' + likeCamping.toLowerCase());
