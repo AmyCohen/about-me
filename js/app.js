@@ -85,6 +85,7 @@ while (bookChance < 4) {
   var howManyBooks = parseInt(prompt('How many physical (not digital) books do you think I own?'));
   if(howManyBooks === qtyBooksOwned){
     alert('How did you know?! I am an avid reader and perfer my books in hard copy due to current legislation...also I cannot get over the wonderful feel and smell of books.');
+    console.log(userName + ' answered ' + howManyBooks + ' on chance number ' + bookChance);
     break;
   } else if (howManyBooks <= 2000) {
     alert('That number is waaaaay too low.');
@@ -95,6 +96,7 @@ while (bookChance < 4) {
   } else {
     alert('Hmmm...something went wrong.  Did you enter a strictly numerical number?');
   }
+  console.log(userName + ' answered ' + howManyBooks + ' on chance number ' + bookChance);
   bookChance ++;
 }
 
