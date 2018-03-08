@@ -3,68 +3,71 @@
 var howManyCorrect = 0;
 
 //initial question to start game
+
 var userName = prompt('Thank you for visiting. What name would you like to be known by?');
 
-
+function dogOwnership() {
 //first question var and if statement
-var dogOwnership = prompt(userName + ', do you think I have any dogs? Please answer with yes or no.');
-
-if (dogOwnership.toLowerCase() === 'yes') {
-  alert('Sadly, I do not have any dogs.');
-} else if (dogOwnership.toLowerCase() === 'no') {
-  alert('While you are correct, it still makes me sad. I want a dog!');
-  howManyCorrect ++;
-} else {
-  alert('You have entered an invalid answer. Please limit your responses to "yes" or "no".');
+  var dogOwnership = prompt(userName + ', do you think I have any dogs? Please answer with yes or no.');
+  if (dogOwnership.toLowerCase() === 'yes') {
+    alert('Sadly, I do not have any dogs.');
+  } else if (dogOwnership.toLowerCase() === 'no') {
+    alert('While you are correct, it still makes me sad. I want a dog!');
+    howManyCorrect ++;
+  } else {
+    alert('You have entered an invalid answer. Please limit your responses to "yes" or "no".');
+  }
+  console.log('QUESTION: Do you think I have any dogs?   ' + userName + '\'s Answer: ' + dogOwnership.toLowerCase());
 }
+dogOwnership();
 
-console.log('QUESTION: Do you think I have any dogs?   ' + userName + '\'s Answer: ' + dogOwnership.toLowerCase());
-
-
+function collegeDegree() {
 //second question var and if statement
-var collegeDegree = prompt(userName + ', do you think I have a college degree? Please answer with yes or no.');
+  var collegeDegree = prompt(userName + ', do you think I have a college degree? Please answer with yes or no.');
+  if (collegeDegree.toLowerCase() === 'yes') {
+    alert('Yes! You are correct. I have a bachelor\'s in Legal Office Administration.');
+    howManyCorrect ++;
+  } else if (collegeDegree.toLowerCase() === 'no') {
+    alert('You are incorrect. I earned a bachelor\'s in Legal Office Administration.');
+  } else {
+    alert('You have entered an invalid answer. Please limit your responses to "yes" or "no".');
+  }
 
-if (collegeDegree.toLowerCase() === 'yes') {
-  alert('Yes! You are correct. I have a bachelor\'s in Legal Office Administration.');
-  howManyCorrect ++;
-} else if (collegeDegree.toLowerCase() === 'no') {
-  alert('You are incorrect. I earned a bachelor\'s in Legal Office Administration.');
-} else {
-  alert('You have entered an invalid answer. Please limit your responses to "yes" or "no".');
+  console.log('QUESTION: Do you think I have a college degree?   ' + userName + '\'s Answer: ' + collegeDegree.toLowerCase());
 }
-
-console.log('QUESTION: Do you think I have a college degree?   ' + userName + '\'s Answer: ' + collegeDegree.toLowerCase());
-
-
+collegeDegree();
+function commuteClass() {
 //third question var and if statement
-var commuteToClass = prompt(userName + ', do you think I drive to class?  Please answer with yes or no.');
+  var commuteToClass = prompt(userName + ', do you think I drive to class?  Please answer with yes or no.');
 
-if (commuteToClass.toLowerCase() === 'yes') {
-  alert('Thankfully not. Driving and parking in the city is so expensive! I take the bus.');
-} else if (commuteToClass.toLowerCase() === 'no') {
-  alert('You are correct. I take 3 different buses to get to class.');
-  howManyCorrect ++;
-} else {
-  alert('You have entered an invalid answer. Please limit your responses to "yes" or "no".');
+  if (commuteToClass.toLowerCase() === 'yes') {
+    alert('Thankfully not. Driving and parking in the city is so expensive! I take the bus.');
+  } else if (commuteToClass.toLowerCase() === 'no') {
+    alert('You are correct. I take 3 different buses to get to class.');
+    howManyCorrect ++;
+  } else {
+    alert('You have entered an invalid answer. Please limit your responses to "yes" or "no".');
+  }
+
+  console.log('QUESTION: Do you think I drive to class?   ' + userName + '\'s Answer: ' + commuteToClass.toLowerCase());
 }
-
-console.log('QUESTION: Do you think I drive to class?   ' + userName + '\'s Answer: ' + commuteToClass.toLowerCase());
-
-
+commuteClass();
+function likeSewing() {
 //fourth question var and if statement
-var likeSewing = prompt(userName + ', do you think I like to sew? Please answer with yes or no.');
+  var likeSewing = prompt(userName + ', do you think I like to sew? Please answer with yes or no.');
 
-if (likeSewing.toLowerCase() === 'yes') {
-  alert('ABSOLUTELY!!!');
-  howManyCorrect ++;
-} else if (likeSewing.toLowerCase() === 'no') {
-  alert('That is so sad. I absolutely LOVE to sew!');
-} else {
-  alert('You have entered an invalid answer. Please limit your responses to "yes" or "no".');
+  if (likeSewing.toLowerCase() === 'yes') {
+    alert('ABSOLUTELY!!!');
+    howManyCorrect ++;
+  } else if (likeSewing.toLowerCase() === 'no') {
+    alert('That is so sad. I absolutely LOVE to sew!');
+  } else {
+    alert('You have entered an invalid answer. Please limit your responses to "yes" or "no".');
+  }
+
+  console.log('QUESTION: Do you think I like to sew?   ' + userName + '\'s Answer: ' + likeSewing.toLowerCase());
 }
-
-console.log('QUESTION: Do you think I like to sew?   ' + userName + '\'s Answer: ' + likeSewing.toLowerCase());
-
+likeSewing();
 
 //fifth question var and if statement
 var likeCamping = prompt(userName + ', do you think I like camping? Please answer with yes or no.');
