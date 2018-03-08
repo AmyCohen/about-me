@@ -68,73 +68,80 @@ function likeSewing() {
   console.log('QUESTION: Do you think I like to sew?   ' + userName + '\'s Answer: ' + likeSewing.toLowerCase());
 }
 likeSewing();
-
+function likeCamping() {
 //fifth question var and if statement
-var likeCamping = prompt(userName + ', do you think I like camping? Please answer with yes or no.');
+  var likeCamping = prompt(userName + ', do you think I like camping? Please answer with yes or no.');
 
-if (likeCamping.toLowerCase() === 'yes') {
-  alert('The short answer is "yes". The longer answer is I would prefer to go "glamping" or go with just my family, but we usually have a large group.');
-  howManyCorrect ++;
-} else if (likeCamping.toLowerCase() === 'no') {
-  alert('You are incorrect. I do enjoy going camping.');
-} else {
-  alert('You have entered an invalid answer. Please limit your responses to "yes" or "no".');
+  if (likeCamping.toLowerCase() === 'yes') {
+    alert('The short answer is "yes". The longer answer is I would prefer to go "glamping" or go with just my family, but we usually have a large group.');
+    howManyCorrect ++;
+  } else if (likeCamping.toLowerCase() === 'no') {
+    alert('You are incorrect. I do enjoy going camping.');
+  } else {
+    alert('You have entered an invalid answer. Please limit your responses to "yes" or "no".');
+  }
+
+  console.log('QUESTION: Do you think I like camping?   ' + userName + '\'s Answer: ' + likeCamping.toLowerCase());
 }
-
-console.log('QUESTION: Do you think I like camping?   ' + userName + '\'s Answer: ' + likeCamping.toLowerCase());
-
+likeCamping();
 
 //sixth question in a while loop with a nested if statement
-
-var bookChance = 4;
-var qtyBooksOwned = 3968;
-while (bookChance > 0) {
-  var howManyBooks = parseInt(prompt('How many physical (not digital) books do you think I own? Please answer with a whole number.'));
-  if(howManyBooks === qtyBooksOwned){
-    alert('How did you know?! I am an avid reader and perfer my books in hard copy due to current legislation...also I cannot get over the wonderful feel and smell of books.');
-    console.log(userName + ' answered ' + howManyBooks + ' on chance number ' + bookChance);
-    howManyCorrect ++;
-    break;
-  } else if (howManyBooks <= 2000) {
-    alert('That number is waaaaay too low.');
-  } else if (howManyBooks >= 2000 && howManyBooks < qtyBooksOwned) {
-    alert('That is a lot less than I have but you\'re thinking in the right direction.');
-  } else if (howManyBooks > qtyBooksOwned) {
-    alert('While that would be totally awesome, sadly it is not true. I have less than you have guessed.');
-  } else {
-    alert('Hmmm...something went wrong.  Did you enter a strictly numerical number?');
-  }
-  console.log(userName + ' answered ' + howManyBooks + ' on chance number ' + bookChance);
-  bookChance --;
-  if (bookChance === 0) {
-    alert('I\'m sorry, ' + userName + ', but you have used the alloted amount of guesses. I have 3,968 hard copy books.');
-  }
-}
-
-//seventh question using an array and a loop
-//totally saved by Timea. THANKS!!!
-var arrayOfStates = ['florida', 'nevada'];
-var chances = 6;
-
-while (chances > 0) {
-  var whatStates = prompt('Please guess a state other than Washington that I\'ve lived in. You have 6 tries to get it correct.').toLowerCase();
-
-  for (var i = 0; i < arrayOfStates.length; i++) {
-    if (whatStates === arrayOfStates[i]) {
-      alert('Correct! I\'ve lived in a total of 3 states; Washington, Florida, and Nevada.');
-      console.log(userName + ' answered ' + whatStates + ' correctly.');
+function howManyBooks() {
+  var bookChance = 4;
+  var qtyBooksOwned = 3968;
+  while (bookChance > 0) {
+    var howManyBooks = parseInt(prompt('How many physical (not digital) books do you think I own? Please answer with a whole number.'));
+    if(howManyBooks === qtyBooksOwned){
+      alert('How did you know?! I am an avid reader and perfer my books in hard copy due to current legislation...also I cannot get over the wonderful feel and smell of books.');
+      console.log(userName + ' answered ' + howManyBooks + ' on chance number ' + bookChance);
       howManyCorrect ++;
-      chances = 0;
       break;
+    } else if (howManyBooks <= 2000) {
+      alert('That number is waaaaay too low.');
+    } else if (howManyBooks >= 2000 && howManyBooks < qtyBooksOwned) {
+      alert('That is a lot less than I have but you\'re thinking in the right direction.');
+    } else if (howManyBooks > qtyBooksOwned) {
+      alert('While that would be totally awesome, sadly it is not true. I have less than you have guessed.');
+    } else {
+      alert('Hmmm...something went wrong.  Did you enter a strictly numerical number?');
+    }
+    console.log(userName + ' answered ' + howManyBooks + ' on chance number ' + bookChance);
+    bookChance --;
+    if (bookChance === 0) {
+      alert('I\'m sorry, ' + userName + ', but you have used the alloted amount of guesses. I have 3,968 hard copy books.');
     }
   }
-  chances --;
+}
+howManyBooks();
+//seventh question using an array and a loop
+//totally saved by Timea. THANKS!!!
+function whereDidILive(){
+  var arrayOfStates = ['florida', 'nevada'];
+  var chances = 6;
+  var isCorrect = false;
+  while (chances > 0) {
+    if (isCorrect === true) {
+      alert('Correct! I\'ve lived in a total of 3 states; Washington, Florida, and Nevada.');
+      console.log(userName + ' answered ' + whatStates + ' correctly.');
+      break;
+    }
+    var whatStates = prompt('Please guess a state other than Washington that I\'ve lived in. You have ' + chances + ' tries to get it correct.').toLowerCase();
+    for (var i = 0; i < arrayOfStates.length; i++) {
+      if (whatStates === arrayOfStates[i]) {
+        isCorrect = true;
+        howManyCorrect ++;
+      }
+    }
+    if (isCorrect === false){
+      alert('Sorry try again');
+      chances --;
+    }
+    if (chances === 0) {
+      alert('I\'m sorry, ' + userName + ', but you have used the alloted amount of guesses. I have lived in a total of 3 states: Washington, Florida, and Nevada.');
 
-  if (chances === 0) {
-    alert('I\'m sorry, ' + userName + ', but you have used the alloted amount of guesses. I have lived in a total of 3 states: Washington, Florida, and Nevada.');
-
-    console.log(userName + ' has used the alloted amount of guesses. I have lived in a total of 3 states: Washington, Florida, and Nevada.');
+      console.log(userName + ' has used the alloted amount of guesses. I have lived in a total of 3 states: Washington, Florida, and Nevada.');
+    }
   }
 }
-
+whereDidILive();
 alert('Thank you for playing, ' + userName + ' You got ' + howManyCorrect + ' questions correct out of 7.');
