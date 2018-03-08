@@ -1,48 +1,74 @@
 body {
-  background-color: rgb(93, 89, 119);
+  background-color: rgb(152, 206, 224);
   margin: 25px;
 }
 
+/* my name */
 h1 {
   font-size: 4em;
   font-weight: bold;
-  font-family: fantasy;
-  color: rgb(163, 208, 253);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(80, 57, 49);
+  margin-bottom: 10px;
 }
 
+hr {
+  stroke: 5px;
+  margin-bottom: 15px
+}
+
+/* all section headings: experience, education, top 10 */
 h2 {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
-  color: black;
-  margin-top: 10px;
+  color: rgb(80, 57, 49);
+  margin-top: 30px;
   margin-bottom: 15px;
 }
 
+/* questions from the quiz */
 p {
-  font-size: 1.5em;
+  font-size: 1em;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.75em;
 }
 
+/* styling for experience and education */
 ul {
   list-style: square;
-  margin: 10px;
-  font-size: 22px;
+  margin-top: 10px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(99, 83, 61);
 }
 
 ul li ul li {
  list-style: circle;
  margin-left: 20 px; 
  font-size: 18px;
+ font-weight: normal;
+ color: rgb(0, 0, 0);
 }
 
+/* styling for top 10 list */
 ol {
-  margin: 10px;
-  font-size: 22px;
+  margin-top: 10px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(99, 83, 61);
 }
 
 ol li {
   margin: 10px;
   font-size: 18px;
+  list-style: decimal;
+  font-weight: normal;
+  color: rgb(0, 0, 0);
 }
