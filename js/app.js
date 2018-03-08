@@ -114,7 +114,7 @@ var arrayOfStates = ['florida', 'nevada'];
 var chances = 6;
 
 while (chances > 0) {
-  var whatStates = prompt('Do you think you can guess a state other than Washington that I\'ve lived in?').toLowerCase();
+  var whatStates = prompt('Please guess a state other than Washington that I\'ve lived in. You have 6 tries to get it correct.').toLowerCase();
 
   for (var i = 0; i < arrayOfStates.length; i++) {
     if (whatStates === arrayOfStates[i]) {
