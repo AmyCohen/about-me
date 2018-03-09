@@ -9,4 +9,8 @@ Received .gitignore and .eslintrc.json from the class repo
 
 Got help from the TAs, Katy, Jason, and Timea when I got stuck on questions 6 and 7.
 
+Got MASSIVE help with question 7 from Andrew and Collin. Oh my gosh, I was so stuck.
+  Driver: I added functions to Collins js under his direction.
+  Navigator: I had Collin add the functions to my js file. We also discussed, labored on, and correct a bug that existed on Q7.
+
 LICENSE MIT
