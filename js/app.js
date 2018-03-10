@@ -18,8 +18,8 @@ function dogOwnership() {
   } else {
     alert('You have entered an invalid answer. Please limit your responses to "yes" or "no".');
   }
-
   console.log('Question #1:\nI asked, "Do you think I have any dogs?"\n' + userName + ' answered with ' + dogOwnership.toLowerCase());
+  return dogOwnership;
 }
 dogOwnership();
 

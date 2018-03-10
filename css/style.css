@@ -17,6 +17,13 @@ hr {
   margin-bottom: 15px
 }
 
+nav ul li {
+	list-style: none;
+  display: inline;
+  font-size: 75%;
+  margin-right: 20px;
+}
+
 /* all section headings: experience, education, top 10 */
 h2 {
   font-size: 175%;
