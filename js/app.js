@@ -5,6 +5,7 @@ var howManyCorrect = 0;
 //initial question to start game
 
 var userName = prompt('Thank you for visiting. What name would you like to be known by?');
+var invalidAnswer = 'You have entered an invalid answer. Please limit your responses to "yes" or "no".';
 
 function dogOwnership() {
 //first question var and if statement
@@ -16,7 +17,7 @@ function dogOwnership() {
     alert('While you are correct, it still makes me sad. I want a dog!');
     howManyCorrect ++;
   } else {
-    alert('You have entered an invalid answer. Please limit your responses to "yes" or "no".');
+    alert(invalidAnswer);
   }
   console.log('Question #1:\nI asked, "Do you think I have any dogs?"\n' + userName + ' answered with ' + dogOwnership.toLowerCase());
   return dogOwnership;
@@ -33,7 +34,7 @@ function collegeDegree() {
   } else if (collegeDegree.toLowerCase() === 'no') {
     alert('You are incorrect. I earned a bachelor\'s in Legal Office Administration.');
   } else {
-    alert('You have entered an invalid answer. Please limit your responses to "yes" or "no".');
+    alert(invalidAnswer);
   }
 
   console.log('Question #2:\nI asked, "Do you think I have a college degree?"\n' + userName + ' answered with ' + collegeDegree.toLowerCase());
@@ -51,7 +52,7 @@ function commuteClass() {
     alert('You are correct. I take 3 different buses to get to class.');
     howManyCorrect ++;
   } else {
-    alert('You have entered an invalid answer. Please limit your responses to "yes" or "no".');
+    alert(invalidAnswer);
   }
 
   console.log('Question #3:\nI asked, "Do you think I drive to class?"\n' + userName + ' answered with ' + commuteToClass.toLowerCase());
@@ -69,7 +70,7 @@ function likeSewing() {
   } else if (likeSewing.toLowerCase() === 'no') {
     alert('That is so sad. I absolutely LOVE to sew!');
   } else {
-    alert('You have entered an invalid answer. Please limit your responses to "yes" or "no".');
+    alert(invalidAnswer);
   }
   // console.log('Question #1:\n I asked "Do you think I have any dogs?"\n   ' + userName + ' answered with ' + dogOwnership.toLowerCase());
 
@@ -88,7 +89,7 @@ function likeCamping() {
   } else if (likeCamping.toLowerCase() === 'no') {
     alert('You are incorrect. I do enjoy going camping.');
   } else {
-    alert('You have entered an invalid answer. Please limit your responses to "yes" or "no".');
+    alert(invalidAnswer);
   }
 
   console.log('Question #5:\nI asked, "Do you think I like camping?"\n' + userName + ' answered with ' + likeCamping.toLowerCase());
